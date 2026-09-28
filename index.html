@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Sabor | Menú y Pedidos </title>
     <meta name="description" content="Restaurante Sabor: conoce nuestro menú, realiza pedidos y contáctanos fácilmente.">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,7 +53,37 @@
 
 </div>
 
-        <button>Hacer un pedido</button>
+    <button id="btnPedido">Hacer un pedido</button>
+   <section id="pedido" class="pedido">
+    <h2>Haz tu pedido</h2>
+
+    <label>Producto:</label>
+    <select id="producto">
+        <option value="35">Refresco - $35</option>
+        <option value="180">Pizza especial - $180</option>
+        <option value="120">Hamburguesa clásica - $120</option>
+    </select>
+
+    <label>Cantidad:</label>
+    <input type="number" id="cantidad" min="1" value="1">
+
+    <button id="agregarProducto">+ Agregar producto</button>
+
+    <div id="listaPedido"></div>
+
+    <p>Total: $<span id="total">0</span> MXN</p>
+
+    <button id="confirmarPedido">Confirmar pedido</button>
+    <div id="datosCliente" class="datos-cliente">
+    <h3>Datos del cliente</h3>
+
+    <input type="text" id="nombreCliente" placeholder="Tu nombre">
+    <input type="text" id="direccionCliente" placeholder="Tu dirección">
+    <input type="tel" id="telefonoCliente" placeholder="Tu teléfono">
+
+    <button id="finalizarPedido">Finalizar pedido</button>
+</div>
+</section>
     </main>
 
  <section class="contacto">
